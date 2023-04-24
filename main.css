@@ -1,0 +1,224 @@
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	background-image: url("image/18.png");
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+    margin-top: 2px;
+	font-size:35px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 10;
+}
+
+#new-task-form {
+	display: flex;
+	
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color:#000000;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: rgb(255, 255, 255);
+	font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+	color: rgb(255, 255, 255);
+}
+
+#new-task-submit  {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  }
+  
+  .task.actions.edit:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+  }
+  
+  
+
+#new-task-submit:hover {
+	opacity: 1.0;
+	
+
+}
+
+#new-task-submit:active {
+
+	color: #ffffff;
+}
+
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 1px;
+}
+
+.task-list {
+	
+	padding: 2rem;
+	
+	
+}
+
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: #000000;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 3px;
+
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+    
+    font-weight: 100;
+	color: rgb(255, 255, 255);
+	font-size: 1.120rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: #ffffff;
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 1.0;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  }
+  
+  .task.actions.edit:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+	  .task.actions.edit {
+	  padding: 0.25em 0.75em;
+	}
+  }
+.task .actions .delete {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  }
+  
+.task.actions.delete:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+	.task.actions.delete {
+	  padding: 0.25em 0.75em;
+	}
+  }
+h2{
+	margin:auto 0;
+	font-size:13px;
+	color:#e7e8d1;
+	
+} 
